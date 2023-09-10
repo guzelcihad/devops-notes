@@ -10,6 +10,8 @@
 
 All of this configs remove the needs for separate files
 
+![alt text](./images/2.png)
+
 ![alt text](./images/1.png)
 
 We have dev, staging and prod environments. In each of these environments we may be able to change some configs for ex replica count
@@ -20,3 +22,13 @@ We have dev, staging and prod environments. In each of these environments we may
 We run this command to create resource -> kubectl apply -k .
 
 # Overlays and Patches
+
+![alt text](./images/3.png)
+
+- In the demo section we've removed all labels from k8 manifest by adding commonLabels to kustomize file
+- `kubectl kustomize .` -> outputs all manifest
+- `kubectl apply -k .` -> apply all changes in K8 cluster
+
+## Summary
+- Kustomization is cool choice for inhouse application
+- If you are looking for deploying 3rd party applications use Helm

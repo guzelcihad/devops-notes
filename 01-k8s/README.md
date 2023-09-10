@@ -1,3 +1,6 @@
+## TODO 
+//soon
+
 - kubectl create -f nginx.yml
 
 - kubectl get events -> shows events in cluster
